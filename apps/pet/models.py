@@ -14,9 +14,6 @@ class Pet(models.Model):
     
     class Meta:
         db_table = 'pet'
-    
-    def __str__(self):
-        return f'{self.name}'   
  
     def save(self, *args, **kwargs):
         self.name = self.name.capitalize()
