@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'pet',
+    'apps.user.apps.UserConfig',
+    'apps.pet.apps.PetConfig',
 ]
 
 MIDDLEWARE = [
@@ -78,8 +79,6 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = MY_DATABASES
-    
-
 
 
 # Password validation
