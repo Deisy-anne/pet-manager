@@ -12,9 +12,6 @@ class User(models.Model):
    class Meta:
        db_table = 'user'
    
-   def __str__(self):
-       return f'{self.first_name} {self.last_name}'
-   
    def save(self, *args, **kwargs):
        self.first_name = self.first_name.capitalize()
        self.last_name = self.last_name.capitalize()
